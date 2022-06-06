@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>    
+</head>
+<body>
+    <div>
+        <form action='greetings.html'>
+          <h1>Регистрация</h1>            
+                <p><i>Заполните, пожалуйста, всю необходимую информацию.</i></p>
+          <hr>
+               
+            <input type="text" placeholder="Логин" name="login" required><br>
+            <input type="password" placeholder="Пароль" name="psw" required><br>
+            <input type="text" placeholder="ФИО" name="full_name" required><br>
+                
+          <p>
+            <b>Пол:</b><br>        
+                <input type="radio" required name="sex" id="man">
+                <label for="man">Мужской</label><br>           
+                <input type="radio" required name="sex" id="woman">
+                <label for="woman">Женский</label>                  
+          </p>
+
+          <p><label for="date"><b>Дата рождения:</b></label>
+          <input type="date" placeholder="Дата рождения" required name="birthday"></p>
+
+          <label for="cities"><b>Город:</b></label>
+          <select name="cities" required>
+                <option></option>  
+                <option>Москва</option>
+                <option>Санкт-Петербург</option>
+                <option>Новосибирск</option>
+                <option>Екатеринбург</option>
+                <option>Казань</option>
+                <option>Челябинск</option>
+                <option>Омск</option>
+                <option>Самар</option>
+                <option>Ростов-на-Дону</option>
+                <option>Уфа</option>
+                <option>Красноярск</option>
+                <option>Пермь</option>
+                <option>Воронеж</option>
+                <option>Волгоград</option>
+                <option>Другой город</option>
+          </select>
+
+          <p><b>Расскажите о себе:</b></p>
+                <textarea name="story" rows="10" cols="40" required></textarea>
+
+          <p><b>И последнее: котик или собачка?</b><br>
+                <input type="radio" required name="pets" id="dog">
+                <label for="dog"><img src="img/1.jpg"></label>
+                <input type="radio" required name="pets" id="cat">
+                <label for="cat"><img src="img/2.jpg"></label>
+          </p>       
+                              
+          <p><button type="submit">Отправить форму</button></p>
+        </form>
+    </div>   
+
+</body>
+</html>
